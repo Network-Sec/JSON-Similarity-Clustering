@@ -5,7 +5,7 @@ import string
 import json
 from pprint import pprint
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier # or RandomForestRegressor depending on your task
+from sklearn.ensemble import RandomForestClassifier 
 from sklearn.model_selection import train_test_split
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
