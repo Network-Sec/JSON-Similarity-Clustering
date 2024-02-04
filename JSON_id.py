@@ -189,7 +189,7 @@ def main():
     object_cluster_map = {random_indices[i]: clusters[i] for i in range(len(clusters))}
 
     # Check if similar objects are in the same cluster
-    for similarity in human_readable_tracker[:5]:  # Assuming this is your intended list
+    for similarity in human_readable_tracker[:5]:
         obj1, obj2 = parse_similarity(similarity)
         cluster_msg = "the same cluster." if object_cluster_map.get(obj1) == object_cluster_map.get(obj2) else "different clusters."
         print(f"Object{obj1} and Object{obj2} are in {cluster_msg}")
